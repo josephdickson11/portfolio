@@ -1,5 +1,9 @@
 import Head from 'next/head'
-import { BsFillMoonStarsFill } from 'react-icons/bs' 
+import { BsFillMoonStarsFill } from 'react-icons/bs'
+import {DiTerminal} from 'react-icons/di'
+import { AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube } from 'react-icons/ai'
+import Image from "next/image"
+import daved2 from "../public/daved.png"
 
 export default function Home() {
   return (
@@ -13,16 +17,32 @@ export default function Home() {
       <main>
         <section className="bg-orange-50 min-h-screen px-10">
           <nav className="py-10 mb-12 flex justify-between items-center'>">
-            <h3 className="text-xs">developedbyola</h3>
-                      <ul className="flex gap-1 items-center">
-              <li className="cursor-pointer text-2xl">
+            <h3 className="text-xs font-burtons">developedbyola</h3>
+            <ul className="flex gap-1 items-center">
+              <li className="cursor-pointer text-xl">
                 <BsFillMoonStarsFill/>
               </li>
               <li>
-                <a href="https://github.com/OladipupoIbeun">Github</a>
+                <a className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 ml-8 rounded-md" href="https://github.com/OladipupoIbeun" >Github</a>
               </li>
             </ul>
           </nav>
+          <div className="text-center p-10 ">
+            <h2 className="text-5xl py-2 text-teal-700 font-medium">Ola Ibeun</h2>
+            <h3 className='text-xl py-2'>Devops Engineer || Cloud Engineer</h3>
+            <p className="text-md py-2 leading-7 text-gray-600">
+              Devops Engineer with years of experience working with leading industry tools to support 
+              the successful development, deployment and observability of software projects and products
+              </p>
+          </div>
+          <div className="text-4xl flex justify-center py-3 gap-16">
+            <AiFillTwitterCircle/>
+            <AiFillLinkedin/>
+            <AiFillYoutube/>
+          </div>
+          <div className="relative mx-auto bg-gradient-to-b from-teal-500 overflow-hidden rounded-full w-80 h-80 mt-20">
+                      <Image src={daved2} alt="daved2" layout="fill" objectFit='cover' />
+          </div>
 
         </section>
         
