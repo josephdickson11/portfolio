@@ -1,5 +1,5 @@
 import Head from 'next/head'
-
+import { BsFillMoonStarsFill } from 'react-icons/bs' 
 
 export default function Home() {
   return (
@@ -11,6 +11,20 @@ export default function Home() {
       </Head>
 
       <main>
+        <section className="bg-orange-50 min-h-screen px-10">
+          <nav className="py-10 mb-12 flex justify-between items-center'>">
+            <h3 className="text-xs">developedbyola</h3>
+                      <ul className="flex gap-1 items-center">
+              <li className="cursor-pointer text-2xl">
+                <BsFillMoonStarsFill/>
+              </li>
+              <li>
+                <a href="https://github.com/OladipupoIbeun">Github</a>
+              </li>
+            </ul>
+          </nav>
+
+        </section>
         
       </main>
 
