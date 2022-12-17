@@ -1,9 +1,11 @@
 import Head from 'next/head'
+
 import { BsFillMoonStarsFill } from 'react-icons/bs'
 import {DiTerminal} from 'react-icons/di'
 import { AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube } from 'react-icons/ai'
 import Image from "next/image"
 import daved2 from "../public/daved.png"
+
 
 export default function Home() {
   return (
@@ -43,6 +45,7 @@ export default function Home() {
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 overflow-hidden rounded-full w-80 h-80 mt-20">
                       <Image src={daved2} alt="daved2" layout="fill" objectFit='cover' />
           </div>
+
 
         </section>
         
