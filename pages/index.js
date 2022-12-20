@@ -25,7 +25,9 @@ export default function Home() {
                 <BsFillMoonStarsFill/>
               </li>
               <li>
+
                 <a className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 ml-8 rounded-md" href="https://github.com/josephdickson11" >Github</a>
+
               </li>
             </ul>
           </nav>
@@ -38,9 +40,11 @@ export default function Home() {
               </p>
           </div>
           <div className="text-4xl flex justify-center py-3 gap-16">
+
             <AiFillTwitterCircle className="cursor-pointer"/>
             <AiFillLinkedin className="cursor-pointer" />
             <AiFillYoutube className="cursor-pointer" />
+
           </div>
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 overflow-hidden rounded-full w-80 h-80 mt-20">
                       <Image src={daved2} alt="daved2" layout="fill" objectFit='cover' />
